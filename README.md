@@ -22,6 +22,7 @@ This Python script listens for keyboard input and automatically corrects spellin
   - `keyboard`
   - `pyautogui`
   - `python-dotenv`
+  -  `argparse`
   - `google-genai` (Google Gemini client)
   
 Install dependencies with:
@@ -36,4 +37,6 @@ pip install keyboard pyautogui python-dotenv google-genai
 2. The script supports inputting your Google Gemini API key via a command-line argument. To provide your API key and save it automatically to a `.env` file, run the script as follows:
 
 ```bash
+cd Auto-Correct-PY
+pip install -r requirements.txt
 python AutoCorrect.py --api_key YOUR_GOOGLE_GEMINI_API_KEY
