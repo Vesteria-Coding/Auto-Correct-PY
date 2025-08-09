@@ -11,7 +11,6 @@ from dotenv import load_dotenv
 parser = argparse.ArgumentParser(description="Simple Spell Checker Using Gemini")
 parser.add_argument('--api_key', help='Input your Gemini API key')
 args = parser.parse_args()
-print('Saving The API Key')
 if args.api_key:
     with open('.env', 'w') as f:
         f.write(f'API_KEY={args.api_key}')
