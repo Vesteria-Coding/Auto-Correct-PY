@@ -36,4 +36,4 @@ pip install keyboard pyautogui python-dotenv google-genai
 2. The script supports inputting your Google Gemini API key via a command-line argument. To provide your API key and save it automatically to a `.env` file, run the script as follows:
 
 ```bash
-python your_script_name.py --api_key YOUR_GOOGLE_GEMINI_API_KEY
+python AutoCorrect.py --api_key YOUR_GOOGLE_GEMINI_API_KEY
