@@ -17,7 +17,7 @@ This Python script listens for keyboard input and automatically corrects spellin
 ## Requirements
 
 - Python 3.7+
-- [Google Gemini API](https://developers.google.com/genai) access and API key.
+- [Google Gemini API](https://ai.google.dev/) access and API key.
 - Python libraries:
   - `keyboard`
   - `pyautogui`
