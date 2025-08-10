@@ -31,13 +31,13 @@ while True:
             key = event.name
             if key == '`':
                 response = client.models.generate_content(
-                    model="gemini-2.0-flash", contents=f"Without adding anything else and no response, fix my spelling and grammar: {key_log}"
+                    model="gemini-2.0-flash", contents=f"Do not add, remove, or change the meaning of any words. Only correct spelling and grammar errors in the following text: {key_log}"
                 )
                 print(response.text)
                 key_log += '`'
                 for i in key_log:
                     autogui.press('backspace')
-                    t.sleep(0.005)
+                t.sleep(0.01)
                 autogui.typewrite(response.text, interval=0.04)
                 t.sleep(0.02)
                 break
@@ -47,7 +47,7 @@ while True:
                 print(key)
             elif key == 'backspace':
                 key_log = key_log[:-1]
-                print(key)
+
             elif key == 'space':
                 key_log += ' '
                 print(key)
